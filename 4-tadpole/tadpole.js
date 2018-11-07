@@ -69,6 +69,7 @@ class Tadpole {
     this.acc.add(force);
   }
   flock(tadpoles) {
+    //attracted by the mouse
     var mouseVec = createVector(mouseX, mouseY);
     var seekForce = this.seek(mouseVec);
     var sepaForce = this.separate(tadpoles);
